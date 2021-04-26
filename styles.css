@@ -23,7 +23,16 @@ p
 	font-size: 24pt;
 	font-weight: 100;
 }
+li 
+{
+	font-size: 24pt;
+}
+.bold
+{
+	font-weight: 900;
+}
 a
 {
+	color: #da8e32;
 	text-decoration: none;
 }
