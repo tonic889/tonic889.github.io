@@ -5,18 +5,25 @@ body
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 	margin-left: 60px;
 	margin-right: 60px;
+	margin-top: 60px;
 }
 h1
 {
 	font-size: 40pt;
-	font-weight: bold;
-}
-.orange
-{
+	font-weight: 900;
 	color: #da8e32;
+}
+h2
+{
+	font-size: 36pt;
+	font-weight: 100;
 }
 p
 {
-	font-size: 36pt;
-	font-weight: normal;
+	font-size: 24pt;
+	font-weight: 100;
+}
+a
+{
+	text-decoration: none;
 }
