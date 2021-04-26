@@ -1,12 +1,22 @@
 body
 {
-	background-color: black;
-	color: white;
-	font-family: 'Barlow', Helvetica, Arial, sans-serif;
-	margin-left: 25%;
-	margin-right: 25%;
+	background-color: white;
+	color: black;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	margin-left: 60px;
+	margin-right: 60px;
 }
-a
+h1
+{
+	font-size: 40pt;
+	font-weight: bold;
+}
+.orange
 {
 	color: #da8e32;
+}
+p
+{
+	font-size: 36pt;
+	font-weight: normal;
 }
