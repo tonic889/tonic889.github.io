@@ -15,17 +15,17 @@ h1
 }
 h2
 {
-	font-size: 36pt;
-	font-weight: 300;
+	font-size: 36px;
+	font-weight: 400;
 }
 p
 {
-	font-size: 24pt;
-	font-weight: 300;
+	font-size: 24px;
+	font-weight: 400;
 }
 li 
 {
-	font-size: 24pt;
+	font-size: 24px;
 }
 .bold
 {
