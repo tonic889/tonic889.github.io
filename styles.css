@@ -36,3 +36,7 @@ a
 	color: #da8e32;
 	text-decoration: none;
 }
+.vertAlignTextBottom
+{
+	vertical-align: text-bottom;
+}
