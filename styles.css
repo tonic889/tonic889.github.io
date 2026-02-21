@@ -41,35 +41,41 @@ h3 {
 
 p,
 li {
-  font-size: 1.05rem;
   margin-top: 0;
+  font-size: 1.05rem;
 }
 
 .subtitle {
-  color: var(--muted);
   margin: 6px 0 20px;
+  color: var(--muted);
 }
 
 .card {
-  background: var(--card);
+  margin: 14px 0;
   border: 1px solid #e8ebe8;
   border-radius: 14px;
+  background: var(--card);
   padding: 18px;
-  margin: 14px 0;
 }
 
 a {
   color: var(--accent);
 }
 
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .button {
   display: inline-block;
-  text-decoration: none;
-  font-weight: 600;
-  background: var(--accent);
-  color: white;
-  padding: 10px 14px;
   border-radius: 10px;
+  background: var(--accent);
+  padding: 10px 14px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .button[aria-disabled="true"] {
