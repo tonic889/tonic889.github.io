@@ -1,42 +1,82 @@
-body
-{
-	background-color: white;
-	color: black;
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-	margin-left: 60px;
-	margin-right: 60px;
-	margin-top: 60px;
+:root {
+  --accent: #228b22;
+  --text: #1a1a1a;
+  --muted: #5b5b5b;
+  --bg: #f8faf8;
+  --card: #ffffff;
 }
-h1
-{
-	font-size: 40pt;
-	font-weight: 900;
-	color: #da8e32;
+
+* {
+  box-sizing: border-box;
 }
-h2
-{
-	font-size: 36px;
-	font-weight: 400;
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
 }
-p
-{
-	font-size: 24px;
-	font-weight: 400;
+
+.content {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
 }
-li 
-{
-	font-size: 24px;
+
+h1 {
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  margin: 0;
 }
-.bold
-{
-	font-weight: 900;
+
+h2 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin: 0 0 8px;
 }
-a
-{
-	color: #da8e32;
-	text-decoration: none;
+
+h3 {
+  font-size: 1.15rem;
+  margin: 28px 0 8px;
 }
-.vertAlignTextBottom
-{
-	vertical-align: text-bottom;
+
+p,
+li {
+  font-size: 1.05rem;
+  margin-top: 0;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin: 6px 0 20px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #e8ebe8;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 14px 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  background: var(--accent);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+.button[aria-disabled="true"] {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.vertAlignTextBottom {
+  vertical-align: text-bottom;
 }
