@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect x="0" y="0" width="100" height="100" rx="16" fill="#1B5E20"/>
+
+    <!-- Crystal ball circle -->
+    <circle cx="50" cy="42" r="24" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+
+    <!-- Rising chart line -->
+    <path d="M28 62 L38 52 L50 58 L62 42 L72 30" fill="none" stroke="#4CAF50" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Arrow head -->
+    <path d="M72 30 L65 37 L69 45 Z" fill="#4CAF50"/>
+
+    <!-- Base -->
+    <ellipse cx="50" cy="74" rx="10" ry="3" fill="#FFFFFF"/>
+</svg>
