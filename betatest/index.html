@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Green Prophet - Beta Testers Wanted</title>
+	<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+	<img class="hero-icon" src="../images/appicon_display.svg" alt="Green Prophet app icon" />
+	<h1>Know where your money will be before it gets there.</h1>
+	<p class="lead">
+		Green Prophet projects your bank balance day by day so you can spot a cash crunch weeks before it hits. No bank logins. No subscription. Completely offline.
+	</p>
+
+	<form id="beta-form" action="https://formspree.io/f/xykbgpje" method="POST">
+		<div class="form-row">
+			<input type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+			<button type="submit">Sign up to beta test</button>
+		</div>
+		<p class="form-note">Green Prophet is in private beta. Sign up and I'll send you access.</p>
+		<p class="form-success" id="form-success">You're in. I'll be in touch with your access link.</p>
+	</form>
+</section>
+
+<hr class="divider" />
+
+<!-- Features -->
+<section class="features">
+	<h2>Built different.</h2>
+	<div class="feature-grid">
+
+		<div class="feature-card">
+			<h3>Your data never leaves your device</h3>
+			<p>No bank logins. No cloud sync. No account required. Green Prophet works 100% offline. Your financial life stays yours.</p>
+		</div>
+
+		<div class="feature-card">
+			<h3>See your future balance, day by day</h3>
+			<p>A running balance chart shows exactly where your account will stand on any day you pick, including the low points you need to plan around.</p>
+		</div>
+
+		<div class="feature-card">
+			<h3>Every real-world payment pattern covered</h3>
+			<p>Weekly, biweekly, monthly, twice-monthly, quarterly, annual. If your bill does it, Green Prophet can model it.</p>
+		</div>
+
+		<div class="feature-card">
+			<h3>Mark it when it clears</h3>
+			<p>As transactions post, mark them entered. Skip the ones that didn't happen. The forecast updates instantly.</p>
+		</div>
+
+		<div class="feature-card">
+			<h3>Minimal. Fast. Yours.</h3>
+			<p>No ads. No upsells. Dark and light theme support. Available on Windows, iOS, and Android.</p>
+		</div>
+
+		<div class="feature-card">
+			<h3>One-time setup, ongoing clarity</h3>
+			<p>Enter your income and bills once. Then just glance at the chart whenever you need to know if you're covered.</p>
+		</div>
+
+	</div>
+</section>
+
+<hr class="divider" />
+
+<!-- How it works -->
+<section class="how">
+	<h2>How it works</h2>
+	<div class="steps">
+		<div class="step">
+			<div class="step-num">1</div>
+			<div class="step-text">
+				<strong>Enter your starting balance</strong>
+				<span>Type in what's in your account today. That's your baseline.</span>
+			</div>
+		</div>
+		<div class="step">
+			<div class="step-num">2</div>
+			<div class="step-text">
+				<strong>Add your income and bills</strong>
+				<span>Paychecks, rent, subscriptions, groceries. Anything that repeats.</span>
+			</div>
+		</div>
+		<div class="step">
+			<div class="step-num">3</div>
+			<div class="step-text">
+				<strong>Pick a date range</strong>
+				<span>One month, six months, a year. See as far ahead as you need.</span>
+			</div>
+		</div>
+		<div class="step">
+			<div class="step-num">4</div>
+			<div class="step-text">
+				<strong>Read the chart</strong>
+				<span>Every dip is visible before it happens. Plan accordingly.</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<hr class="divider" />
+
+<!-- Bottom CTA -->
+<section class="bottom-cta">
+	<h2>Want early access?</h2>
+	<p>Green Prophet is in private beta. Sign up and I'll send you access.</p>
+	<form id="beta-form-2" action="https://formspree.io/f/xykbgpje" method="POST">
+		<div class="form-row" style="justify-content:center;">
+			<input type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+			<button type="submit">Request beta access</button>
+		</div>
+		<p class="form-note">No spam. Just a direct message with your access link.</p>
+		<p class="form-success" id="form-success-2">You're in. I'll be in touch with your access link.</p>
+	</form>
+</section>
+
+<!-- Footer -->
+<footer>
+	<p>Green Prophet | <a href="../index.html">Dungeon East</a> | <a href="../privacy.html">Privacy Policy</a></p>
+</footer>
+
+
+<script>
+	function handleForm(formId, successId) {
+		const form = document.getElementById(formId);
+		if (!form) return;
+		form.addEventListener('submit', async function (e) {
+			e.preventDefault();
+			const response = await fetch(form.action, {
+				method: 'POST',
+				body: new FormData(form),
+				headers: { 'Accept': 'application/json' }
+			});
+			if (response.ok) {
+				form.querySelector('input[type="email"]').value = '';
+				document.getElementById(successId).style.display = 'block';
+			}
+		});
+	}
+	handleForm('beta-form', 'form-success');
+	handleForm('beta-form-2', 'form-success-2');
+</script>
+
+</body>
+</html>
