@@ -1,5 +1,11 @@
 /* Reset */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 /* Variables */
 :root {
@@ -23,8 +29,7 @@
 }
 
 /* Base */
-body
-{
+body {
 	background: var(--bg);
 	color: var(--text);
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -101,7 +106,9 @@ body
 	transition: background 0.15s;
 }
 
-.form-row button:hover { background: var(--green-dark); }
+.form-row button:hover {
+	background: var(--green-dark);
+}
 
 .form-note {
 	margin-top: 12px;
@@ -244,45 +251,52 @@ footer {
 	color: var(--muted);
 }
 
-footer a { color: var(--green); text-decoration: none; }
+footer a {
+	color: var(--green);
+	text-decoration: none;
+}
 
 @media (max-width: 500px) {
-	.form-row { flex-direction: column; }
-	.form-row button { width: 100%; }
+	.form-row {
+		flex-direction: column;
+	}
+
+	.form-row button {
+		width: 100%;
+	}
 }
 
 /* Root element styles — placed last to take precedence over component defaults */
-h1
-{
+h1 {
 	font-size: 40pt;
 	font-weight: 900;
 	color: #559E5A;
 }
-h2
-{
+
+h2 {
 	font-size: 36px;
 	font-weight: 400;
 }
-p
-{
+
+p {
 	font-size: 24px;
 	font-weight: 400;
 }
-li
-{
+
+li {
 	font-size: 24px;
 }
-.bold
-{
+
+.bold {
 	font-weight: 900;
 }
-a
-{
+
+a {
 	color: #559E5A;
 	text-decoration: none;
 }
-.vertAlignTextBottom
-{
+
+.vertAlignTextBottom {
 	vertical-align: text-bottom;
 }
 
@@ -290,4 +304,60 @@ a
 	.vertAlignTextBottom {
 		filter: invert(1);
 	}
+}
+
+.download-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+	justify-content: center;
+	margin: 1.5rem 0 0;
+}
+
+.store-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 14px 26px;
+	border-radius: 12px;
+	background: #1B5E20;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.05rem;
+	transition: background .15s;
+}
+
+.store-btn:hover {
+	background: #1E7D3C;
+}
+
+.store-btn--soon {
+	background: #2a2d2a;
+	color: #9aa39a;
+	cursor: default;
+}
+
+.store-btn--beta {
+	background: transparent;
+	border: 2px solid #1E7D3C;
+	color: #7FE3A6;
+	padding: 12px 24px;
+}
+
+.store-btn--beta:hover {
+	background: #1E7D3C;
+	color: #fff;
+}
+
+.download-note {
+	font-size: .9rem;
+	opacity: .7;
+	margin-top: .85rem;
+}
+
+.win-note {
+	font-size: .8rem;
+	opacity: .6;
+	margin-top: .4rem;
 }
