@@ -3,8 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Green Prophet - Beta Testers Wanted</title>
+	<title>Green Prophet — See your bank balance, weeks ahead</title>
+	<meta name="description" content="Green Prophet forecasts your bank balance day by day so you can spot a cash crunch before it hits. No bank login, no subscription, completely offline." />
+
+	<!-- Open Graph / social preview -->
+	<meta property="og:title" content="Green Prophet — See your bank balance, weeks ahead" />
+	<meta property="og:description" content="Forecast your bank balance day by day. No bank login, no subscription, completely offline." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://dungeoneast.app/greenprophet/" />
+	<meta property="og:image" content="https://dungeoneast.app/images/feature-graphic.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+
 	<link rel="stylesheet" href="../styles.css" />
+
 </head>
 <body>
 
@@ -16,14 +27,22 @@
 		Green Prophet projects your bank balance day by day so you can spot a cash crunch weeks before it hits. No bank logins. No subscription. Completely offline.
 	</p>
 
-	<form id="beta-form" action="https://formspree.io/f/xykbgpje" method="POST">
-		<div class="form-row">
-			<input type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
-			<button type="submit">Sign up to beta test</button>
-		</div>
-		<p class="form-note">Green Prophet is in private beta. Sign up and I'll send you access.</p>
-		<p class="form-success" id="form-success">You're in. I'll be in touch with your access link.</p>
-	</form>
+	<!-- DOWNLOAD BUTTONS -->
+	<!-- TODO: replace the two href placeholders below with your real links -->
+	<div class="download-row">
+		<a class="store-btn" href="https://apps.apple.com/us/app/green-prophet/id1580669864">Download for iOS</a>
+		<a class="store-btn" href="https://apps.microsoft.com/detail/9N7W0BRFV4KP?hl=en-us&gl=US&ocid=pdpshare">Download for Windows</a>
+		<a class="store-btn store-btn--beta" href="https://groups.google.com/g/green-prophet-testers" target="_blank" rel="noopener">Join the Android beta</a>
+	</div>
+	<p class="download-note">Free. No account, no subscription, no ads.</p>
+	<p class="win-note">Windows is a direct download. You may see a SmartScreen prompt the first time &mdash; choose <strong>More info &rarr; Run anyway</strong>.</p>
+	<p class="win-note">Android is in open testing right now &mdash; tap &ldquo;Join the Android beta&rdquo; to try it early.</p>
+
+	<!-- Hero screenshot -->
+	<img class="hero-shot"
+		src="../images/green-prophet-graph.png"
+		alt="Green Prophet balance forecast chart projecting a dip to a minimum before recovering"
+		style="display:block; margin:2.5rem auto 0; max-height:560px; width:auto; max-width:100%; border-radius:24px; box-shadow:0 14px 44px rgba(0,0,0,0.22);" />
 </section>
 
 <hr class="divider" />
@@ -45,7 +64,7 @@
 
 		<div class="feature-card">
 			<h3>Every real-world payment pattern covered</h3>
-			<p>Weekly, biweekly, monthly, twice-monthly, quarterly, annual. If your bill does it, Green Prophet can model it.</p>
+			<p>Daily, weekly, monthly, bimonthly, quarterly, biannual, annual. If your bill does it, Green Prophet can model it.</p>
 		</div>
 
 		<div class="feature-card">
@@ -55,7 +74,7 @@
 
 		<div class="feature-card">
 			<h3>Minimal. Fast. Yours.</h3>
-			<p>No ads. No upsells. Dark and light theme support. Available on Windows, iOS, and Android.</p>
+			<p>No ads. No upsells. Dark and light theme support. Built for Windows, iOS, and Android.</p>
 		</div>
 
 		<div class="feature-card">
@@ -105,23 +124,79 @@
 
 <hr class="divider" />
 
-<!-- Bottom CTA -->
+<!-- Proof: offline is verifiable -->
+<section class="proof">
+	<h2>Don't take our word for it</h2>
+	<p>
+		On Android, Green Prophet doesn't request internet permission at all — so the operating system itself
+		stops it from making any network connection. It physically cannot send your data anywhere.
+	</p>
+	<p>
+		Want to check? Turn on airplane mode and use the app. Everything works exactly the same, because it never
+		needed a connection in the first place. No telemetry, no analytics, no account, no servers.
+	</p>
+</section>
+
+<hr class="divider" />
+
+<!-- What it is / isn't -->
+<section class="whatitis">
+	<h2>What it is — and isn't</h2>
+	<p>
+		Green Prophet answers one question: how much money should be in my account a week, a month, or a year
+		from now? That's it.
+	</p>
+	<p>
+		It's not a full-featured budgeting app. It doesn't keep a history of the past, sync with your bank, do
+		budgeting, or make investment suggestions. There are lots of (elaborate, subscription-required) apps that
+		already do that, and I'm not interested in replicating them.
+	</p>
+</section>
+
+<hr class="divider" />
+
+<!-- Founder note -->
+<section class="why">
+	<h2>Why I made this</h2>
+	<p>
+		It started as a project for myself. I couldn't find anything that did this, the way I wanted it, for free.
+		So I wrote it myself. Eventually I figured I'd come far enough that I should just publish it.
+	</p>
+	<p>
+		I genuinely don't know if anyone else will find it useful. This isn't my million-dollar idea and I'm not
+		raising venture capital for it. Lol. If nothing else, it's a good line on my resume.
+	</p>
+	<p>
+		But if "how much will be in my account next month?" is a question you've ever asked yourself — maybe it'll
+		be useful to you too.
+	</p>
+</section>
+
+<hr class="divider" />
+
+<!-- Bottom CTA: download + Android notify -->
 <section class="bottom-cta">
-	<h2>Want early access?</h2>
-	<p>Green Prophet is in private beta. Sign up and I'll send you access.</p>
-	<form id="beta-form-2" action="https://formspree.io/f/xykbgpje" method="POST">
+	<h2>Get Green Prophet</h2>
+	<div class="download-row">
+		<a class="store-btn" href="https://apps.apple.com/us/app/green-prophet/id1580669864">Download for iOS</a>
+		<a class="store-btn" href="https://apps.microsoft.com/detail/9N7W0BRFV4KP?hl=en-us&gl=US&ocid=pdpshare">Download for Windows</a>
+		<a class="store-btn store-btn--beta" href="https://groups.google.com/g/green-prophet-testers" target="_blank" rel="noopener">Join the Android beta</a>
+	</div>
+
+	<p style="margin-top:2rem;">Not up for testing a beta? The public Android release is coming soon &mdash; want a heads-up the day it lands on Google Play?</p>
+	<form id="notify-form" action="https://formspree.io/f/xykbgpje" method="POST">
 		<div class="form-row" style="justify-content:center;">
 			<input type="email" name="email" placeholder="you@example.com" required autocomplete="email" />
-			<button type="submit">Request beta access</button>
+			<button type="submit">Notify me</button>
 		</div>
-		<p class="form-note">No spam. Just a direct message with your access link.</p>
-		<p class="form-success" id="form-success-2">You're in. I'll be in touch with your access link.</p>
+		<p class="form-note">No spam. One email when the Android version is live.</p>
+		<p class="form-success" id="notify-success" style="display:none;">Got it — I'll email you when Android is ready.</p>
 	</form>
 </section>
 
 <!-- Footer -->
 <footer>
-	<p>Green Prophet | <a href="../index.html">Dungeon East</a> | <a href="../privacy.html">Privacy Policy</a></p>
+	<p>Green Prophet | <a href="../index.html">Dungeon East</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="support.html">Support</a></p>
 </footer>
 
 
@@ -142,8 +217,7 @@
 			}
 		});
 	}
-	handleForm('beta-form', 'form-success');
-	handleForm('beta-form-2', 'form-success-2');
+	handleForm('notify-form', 'notify-success');
 </script>
 
 </body>
