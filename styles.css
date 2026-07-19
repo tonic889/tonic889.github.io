@@ -221,6 +221,31 @@ body {
 	color: var(--muted);
 }
 
+/* Text section (heading + a few paragraphs, e.g. proof / whatitis / why) */
+.text-section {
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 52px 24px;
+}
+
+.text-section h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: var(--text);
+}
+
+.text-section p {
+	font-size: 0.98rem;
+	color: var(--muted);
+	line-height: 1.6;
+	margin-bottom: 14px;
+}
+
+.text-section p:last-child {
+	margin-bottom: 0;
+}
+
 /* Bottom CTA */
 .bottom-cta {
 	max-width: 680px;
